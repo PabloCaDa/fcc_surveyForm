@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex flex--center">
+        <h1 id="title">RPS Ultimate Survey</h1>
+    </header>
+    <section>
+        <div class="text-center">
+            <p id="description">Let us know how you play!</p>
+        </div>
+        <div>
+            <form id="survey-form" action="" class="flex flex--center flex--column">
+                <div class="flex flex--center row">
+                    <label id="name-label" class="labels" for="name">Name</label > 
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="flex flex--center row">
+                    <label id="email-label" class="labels" for="email" >Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="flex flex--center row">
+                    <label id="number-label" class="labels" for="number">Age</label>
+                    <input id="number" type="number" min="1" max="100" placeholder="Enter your number" required>
+                </div>
+                <div class="flex row flex--center">
+                    <label id="number-label" class="labels" for="dropdown">Which you normally choose?</label>
+                    <select name="rock-paper-scissors" id="dropdown">
+                        <option value="">Rock</option>
+                        <option value="">Paper</option>
+                        <option value="">Scissors</option>
+                    </select>
+                </div>
+
+                <div class="flex flex--center row">
+                    <label class="labels" for="howUKnow">Hod do you know about that game?</label>
+                    <fieldset name="howUKnow">
+                        <div>
+                            <label for="oftenInput">Some friend told me about it.</label>
+                            <input id="oftenInput" type="radio" value="1" name="radio-buttons">
+                        </div>
+                        <div>
+                            <label for="somedaysInput">I read about it in an old book.</label>
+                            <input id="somedaysInput" type="radio" value="2" name="radio-buttons">
+                        </div>
+                        <div>
+                            <label for="neverInput">On the Internet, silly!</label>
+                            <input id="neverInput" type="radio" value="3" name="radio-buttons">
+                        </div>
+                        <div>
+                            <label for="neverInput">Don't know...I just made it up on day...</label>
+                            <input id="neverInput" type="radio" value="3" name="radio-buttons">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="row flex flex--center">
+                    <label class="labels" for="howUKnow">Why you play?</label>
+                    <ul>
+                        <li>
+                            <label for="">Have Fun</label>
+                            <input type="checkbox" value="1">
+                        </li>
+                        <li>
+                            <label for="">I use to get bored easy</label>
+                            <input type="checkbox" value="2">
+                        </li>
+                        <li>
+                            <label for="">I have read that it improves your analitic skills</label>
+                            <input type="checkbox" value="3">
+                        </li>
+                        <li>
+                            <label for="">Just to annoying my sister</label>
+                            <input type="checkbox" value="4">
+                        </li>
+                        <li>
+                            <label for="">Basically, to see who is right!</label>
+                            <input type="checkbox"value="5">
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex row flex--center">
+                    <label class="labels" for="addComments">Add a comment about the game (...but we will never change it)</label>
+                    <textarea name="comments" id="addComments" cols="30" rows="10" plecholder="Don't left anything behind"></textarea>
+                </div>
+
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
