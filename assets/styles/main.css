@@ -9,20 +9,48 @@ body{
 
 ul{
     text-decoration: none;
+    list-style: none;
+    padding-left:10px;
 }
 
 input,select{
     width: 48%;
 }
 
+input[type=radio] , input[type=checkbox]{
+    width: auto;
+}
+
+input[type=checkbox]{
+    margin-right:5px;
+}
+
 .flex{
     display: flex;
+}
+
+.flex--wrap{
+    flex-wrap: wrap;
+}
+
+.flex--reverse{
+flex-direction: row-reverse;
+
 }
 
 .flex--center{
     justify-content: center;
     align-items: center;
 }
+
+.flex--align-center{
+    align-items: center;
+}
+
+.flex--align-baseline{
+    align-items: baseline;
+}
+
 .flex--column{
     flex-direction: column;
 }
@@ -38,6 +66,14 @@ input,select{
     text-align: center;
 }
 
+.text-left{
+    text-align: left;
+}
+
+.margin-bottom-10{
+    margin-bottom:10px;
+}
+
 .row{
     margin-bottom:20px;
     width: 100%;
@@ -51,6 +87,18 @@ header{
     background: -webkit-linear-gradient(top, rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+}
+
+#headerImg{
+    width:20%;
+    
+}
+
+#title{
+    margin-top:0px;
+    background-color: rgb(250, 214, 108);
+    padding:5px;
+    margin-bottom:5px;
 }
 
 #description {
@@ -70,3 +118,62 @@ header{
     margin:20px;
     text-align:right;
 }
+
+label[for=howUKnow], label[for= whyUPlay]{
+    margin-top:10px;
+}
+
+fieldset{
+    padding:0.5em 1em;
+    align-self: flex-end;
+    width: 44%;
+}
+
+label[for="addComments"]{
+    text-align: left;
+}
+
+textarea{
+    width: 48%;
+}
+
+footer{
+    background-color: #333;
+    padding: 40px;
+}
+
+footer ul{
+    margin-bottom:0px;
+}
+
+footer #links-container{
+    width:50%;
+    min-width:50%;
+    margin:0px auto;
+}
+
+footer #links-container a{
+    text-transform: none;
+    text-decoration: none;
+}
+
+footer #links-container a i{
+    color:#fff;
+}
+
+footer #links-container a i:hover{
+    color:rgba(255, 255, 255, 0.664);
+}
+
+button{
+    width:50%;
+    padding:10px 5px;
+    margin-top:10px;
+}
+
+button:hover{
+    background-color: rgba(2, 146, 2, 0.801);
+    border:2px solid #fff;
+    color:#fff;
+}
+

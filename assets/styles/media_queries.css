@@ -1,0 +1,49 @@
+@media screen and (max-width:1200px) {
+    #survey-form{
+        width:80%;
+        padding:10px 40px;
+    }
+    #headerImg{
+        width:30%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #survey-form{
+        width:75%;
+        padding:10px 40px;
+    }
+
+    #headerImg{
+        width:50%;
+    }
+
+    .labels{
+        text-align: left;
+        margin-left:0px;
+        margin-right:auto;
+        width: 100%
+    }
+    input, select{
+        width:100%;
+    }
+
+    fieldset{
+        width: 87%
+    }
+
+    ul{
+        padding-left: 0px;
+        margin-bottom:0px;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    .toColumn{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
